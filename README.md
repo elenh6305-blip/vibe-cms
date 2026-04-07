@@ -87,18 +87,13 @@ AI 提示词（和多行文本）用代码块展示，而不是塞进表格：
 
 ## 怎么安装
 
-把 `vibe-cms/` 文件夹放到项目的 `.agents/skills/` 下就行：
+推荐直接用 `npx` 安装：
 
-```text
-your-project/
-└── .agents/skills/vibe-cms/
-    ├── SKILL.md           ← AI 读的指令文件
-    ├── README.md          ← 你在读的这个
-    └── references/
-        └── template.md    ← CMS markdown 的样式模板
+```bash
+npx skills add elenh6305-blip/vibe-cms --skill vibe-cms
 ```
 
-支持 Anthropic Skill 规范或具备读取工作流指令能力的工具（Claude Code、Roo Code、Antigravity 等）均可丝滑使用。
+安装完成后，重启你的 AI 编程工具以加载这个 skill。
 
 ---
 
